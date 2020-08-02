@@ -1,0 +1,19 @@
+@import "../../lib/breakpoints";
+
+@mixin movile {
+    .proyects__layout{
+        @media only screen and (max-width: $movile){
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+    .proyects__hero{
+        @media only screen and (max-width: $movile){
+            padding: 0;
+        }
+    }
+    .proyects__list{
+        @media only screen and (max-width: $movile){
+            padding: 1em 0em 0em 0em;
+        }
+    }
+}

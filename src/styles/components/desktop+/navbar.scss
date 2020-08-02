@@ -1,0 +1,27 @@
+@import "../../lib/variables";
+@import "../../lib/list";
+@import "../movile/navbar";
+@import "../tablet/navbar";
+
+.Navbar{
+    width: 100vw;
+    padding: 0px 0px;
+    background-color: $white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    ul{
+        @extend %item-lessstyle;
+        display: flex;
+        margin: 0px;
+        padding: 0px;
+    }
+    li:nth-of-type(2){
+        position: absolute;
+        top: 1px;
+        right: 15px;
+    }
+}
+
+@include tablet;
+@include movile;

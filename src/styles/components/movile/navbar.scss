@@ -1,0 +1,10 @@
+@import "../../lib/breakpoints.scss";
+
+@mixin movile {
+    .Navbar{
+        @media only screen and(max-width: $movile){
+        display: none;
+        visibility: hidden;
+        }
+    }
+}

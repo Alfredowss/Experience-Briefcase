@@ -1,0 +1,19 @@
+@import "../../lib/breakpoints";
+
+
+@mixin tablet {
+    .proyects__layout{
+        @media only screen and (max-width: $tablet){
+            grid-template-areas: "hero hero"
+                                 "list list";
+            grid-template-rows: 350px auto;
+            grid-template-columns: 350px 1fr;
+        }
+    }
+    .proyects__side{
+        @media only screen and (max-width: $tablet){
+            display: none;
+            visibility: hidden;
+        }
+    }
+}

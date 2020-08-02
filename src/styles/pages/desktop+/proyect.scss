@@ -1,0 +1,49 @@
+@import '../../lib/variables';
+@import '../../lib/buttons';
+
+
+.proyect__container{
+    width: 100vw;
+    min-height: 100vh;
+}
+
+.proyect__header__container{
+    width: 100vw;
+    height: 420px;
+    background: $overlay;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.proyect__header__imagecontainer{
+    position: relative;
+}
+
+.proyect__header__description{
+    color: white;
+    padding-left: 7em;
+    padding-top: 4em;
+    box-sizing: border-box;
+    padding-right: 1em;
+
+    span{
+        display: inline-block;
+    }
+    button{
+        @extend %button;
+        margin-top: 2em;
+        &:nth-of-type(1){
+            margin-right: 3em;
+        }
+    }
+}
+
+.proyect__header__image{
+    position: absolute;
+    background: $brand;
+    top: 70px;
+    left: 0;
+    bottom: 0;
+    width: 400px;
+    height: 500px;
+}

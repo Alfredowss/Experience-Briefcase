@@ -1,0 +1,46 @@
+@import "../../lib/variables";
+@import "../../lib/list";
+@import "../movile/list-proyects";
+
+.list__container__ul{
+    height: auto;
+    display: grid;
+    min-width: 250px;
+    grid-auto-rows: minmax(50px, auto);
+    grid-template-columns: minmax(250px, auto);
+    padding-left : 30px;
+}
+
+.list__container__items{
+    @extend %item-lessstyle;
+    box-shadow: -1px 2px 3px gray;
+    animation: list-in .7s ease ;
+    position: relative;
+    padding-right: 50%;
+    padding-left: 1em;
+    padding-bottom: .5em;
+    margin: .5em 0em;
+    margin-bottom: .5em;
+    will-change: transform, opacity, transition, opacity, perspective;
+    outline: none;
+    text-decoration: none;
+    color: $black;
+    cursor: pointer;
+
+    &:hover{
+        transition: .1s;
+        background: gray;
+        padding-top: .2em;
+        padding-bottom: .6em;
+        // animation: in ease .3s forwards; 
+    }
+    img{
+        height: 100%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
+}
+
+@include movile;

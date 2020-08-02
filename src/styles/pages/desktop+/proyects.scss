@@ -1,0 +1,64 @@
+@import "../../lib/variables";
+@import "../../lib/buttons";
+@import "../../lib/list";
+@import "../movile/proyects";
+@import "../tablet/proyects";
+@import "../../lib/keyframes";
+
+.proyects__layout{
+    background-color: white;
+    min-width: 100vw;
+    min-height: 100vh;
+    display: grid;
+    grid-template-areas: "hero hero"
+                          "side list";
+    grid-template-rows: 350px auto;
+    grid-template-columns: 350px 1fr;
+ 
+}
+
+.proyects__hero{
+    grid-area: hero;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5em;
+    background: $overlay;
+    font-style: weight;
+    color: $white;
+    border: none;
+    padding-left: .5em;
+}
+
+
+.proyects__side{
+    grid-area: side;
+    background: $brand;
+}
+
+.proyects__list{
+    grid-area: list;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-template-columns: auto;
+    padding: 1em 2em 0em 0em;
+    overflow: scroll;
+}
+
+.proyects__list__skills{
+    display: flex; 
+    justify-content: flex-end;
+    padding-left: 30px;
+}
+
+
+.list__button-skills{
+  @extend %button;
+  height: 35px;
+  width: 400px;
+  border: none;
+}
+
+@include tablet;
+@include movile;
+

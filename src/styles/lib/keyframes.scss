@@ -1,0 +1,24 @@
+
+@keyframes in{
+    from{
+        transform: translateZ(0px);
+    }to{
+        transform: translateZ(5px);
+    }
+}
+
+@keyframes list-in{
+    0%{
+        transform: translate(100%);
+        opacity: 0;
+    }
+
+    30%{
+        opacity: 0;
+    }
+
+    100%{
+        transform: translate(0px);
+        opacity: 1;
+    }
+}

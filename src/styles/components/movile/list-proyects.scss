@@ -1,0 +1,26 @@
+@import "../../lib/breakpoints";
+
+@mixin movile {
+    .list__button-skills{
+        @media only screen and (max-width: $movile){
+            width: 200px;
+        }
+    }
+    .list__container__ul{
+        @media only screen and (max-width: $movile){
+            padding: 0 15px;
+        }
+    }
+    
+    .list__container__items{
+        @media only screen and(max-width: $movile){
+            padding-right: 5px;
+        }
+        img{
+            @media only screen and(max-width: $movile){
+                display: none;
+                visibility: hidden;
+            }
+        }
+    }
+}

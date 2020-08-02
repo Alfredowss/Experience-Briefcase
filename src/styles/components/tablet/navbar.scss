@@ -1,0 +1,12 @@
+@import "../../lib/breakpoints.scss";
+
+@mixin tablet{
+    .Navbar{
+        @media only screen and(max-width: $tablet){
+            li:nth-of-type(2){
+                display: none;
+                visibility: hidden;
+            }
+        }    
+    }
+}
