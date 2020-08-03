@@ -1,6 +1,7 @@
 @import "../../lib/variables";
 @import "../../lib/list";
 @import "../movile/list-proyects";
+@import "../../lib/keyframes.scss";
 
 .list__container__ul{
     height: auto;
@@ -14,7 +15,7 @@
 .list__container__items{
     @extend %item-lessstyle;
     box-shadow: -1px 2px 3px gray;
-    animation: list-in .7s ease ;
+    animation: list-in .9s ease;
     position: relative;
     padding-right: 50%;
     padding-left: 1em;

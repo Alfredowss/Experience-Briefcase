@@ -3,7 +3,6 @@
 @import "../../lib/list";
 @import "../movile/proyects";
 @import "../tablet/proyects";
-@import "../../lib/keyframes";
 
 .proyects__layout{
     background-color: white;
@@ -28,8 +27,23 @@
     color: $white;
     border: none;
     padding-left: .5em;
+    font-family: 'courier';
 }
 
+.proyects__hero div{
+    position: relative;
+}
+
+.proyects__hero .written{
+    display: inline-block;
+    width: 100%;
+    right: 0;
+    position: absolute;
+    background: $overlay;
+    animation: written .6s steps(9);
+    animation-fill-mode: forwards;
+    animation-delay: .2s;
+}
 
 .proyects__side{
     grid-area: side;

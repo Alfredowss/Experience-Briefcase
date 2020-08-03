@@ -10,7 +10,7 @@ class Proyects extends React.Component{
         return(
             <div className="proyects__layout">
                 <div className="proyects__hero">
-                     <span>Proyectos</span>
+                    <div>Proyectos<span className="written">&nbsp;</span></div>
                 </div>
                 <div className="proyects__side">
 
