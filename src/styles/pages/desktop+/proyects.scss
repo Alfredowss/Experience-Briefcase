@@ -11,9 +11,8 @@
     display: grid;
     grid-template-areas: "hero hero"
                           "side list";
-    grid-template-rows: 350px auto;
-    grid-template-columns: 350px 1fr;
- 
+    grid-template-rows: 350px 1fr;
+    grid-template-columns: 350px auto;
 }
 
 .proyects__hero{
@@ -27,7 +26,8 @@
     color: $white;
     border: none;
     padding-left: .5em;
-    font-family: 'courier';
+    font-family: 'Source Serif Pro';
+    letter-spacing: 2px;
 }
 
 .proyects__hero div{
@@ -62,9 +62,7 @@
 .proyects__list__skills{
     display: flex; 
     justify-content: flex-end;
-    padding-left: 30px;
 }
-
 
 .list__button-skills{
   @extend %button;
