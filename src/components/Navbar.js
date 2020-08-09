@@ -1,6 +1,6 @@
 import React from 'react'
 import '../styles/components/desktop+/navbar.scss'
-import brand from '../images/brand-azul.png'
+import brand from '../images/brand-azul.svg'
 import logo from '../images/logo-azul.png'
 
 class Navbar extends React.Component{

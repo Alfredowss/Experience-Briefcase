@@ -7,11 +7,10 @@
 .proyects__layout{
     background-color: white;
     min-width: 100vw;
-    min-height: 100vh;
     display: grid;
     grid-template-areas: "hero hero"
                           "side list";
-    grid-template-rows: 350px 1fr;
+    grid-template-rows: 350px auto;
     grid-template-columns: 350px auto;
 }
 
@@ -53,7 +52,7 @@
 .proyects__list{
     grid-area: list;
     display: grid;
-    grid-template-rows: auto 1fr;
+    grid-template-rows: auto auto;
     grid-template-columns: auto;
     padding: 1em 2em 0em 0em;
     overflow: scroll;
