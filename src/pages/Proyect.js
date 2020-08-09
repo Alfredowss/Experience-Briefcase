@@ -1,6 +1,7 @@
 import React from 'react'
-
+import Skills from '../components/Skills'
 import '../styles/pages/desktop+/proyect.scss'
+import randomImage from '../images/fondo .jpg';
 
 function Proyect(props){
     return  (
@@ -16,7 +17,16 @@ function Proyect(props){
                     <button>Go</button> <button>Repositorio</button>
                 </div>
                 <div className="proyect__header__imagecontainer">
-                    <span className="proyect__header__image"></span>
+                    <span className="proyect__header__image">
+                        <h4>Skills</h4>
+                        <Skills />
+                    </span>
+                </div>
+            </div>
+            <div className="proyect__badge__container">
+                <div><img src={randomImage} width="350px"></img></div>
+                <div>
+                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
                 </div>
             </div>
         </div>

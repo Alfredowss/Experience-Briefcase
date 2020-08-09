@@ -1,0 +1,14 @@
+@import "../../lib/buttons.scss";
+
+.skill-tag{
+    @extend %button;
+    background: rgb(255, 140, 0);
+    padding: 4px 9px;
+    margin: 5px 12px;
+    border-radius: 10px;
+    &:hover{
+        background: rgb(145, 33, 33);
+        padding: 5px 10px;
+        margin: 5px 2px;
+    }
+}
