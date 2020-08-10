@@ -1,6 +1,6 @@
 @import '../../lib/variables';
 @import '../../lib/buttons';
-
+@import '../../pages/tablet/proyect.scss';
 
 .proyect__container{
     width: 100vw;
@@ -14,6 +14,7 @@
     background: $overlay;
     display: grid;
     grid-template-columns: 2fr 1fr;
+    box-sizing: border-box;
 }
 
 .proyect__header__imagecontainer{
@@ -64,4 +65,8 @@
     grid-template-columns: 440px 1fr;
     align-items: center;
     justify-items: center;
+    padding: 1em 2em;
+    box-sizing: border-box;
 }
+
+@include tablet;
